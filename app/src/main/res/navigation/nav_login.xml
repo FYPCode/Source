@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LoginMethodsFragment">
+
+    <fragment
+        android:id="@+id/LoginMethodsFragment"
+        android:name="com.example.carshare.loginmethods.LoginMethodsFragment"
+        android:label="@string/login_methods"
+        tools:layout="@layout/fragment_login_methods">
+
+        <action
+            android:id="@+id/action_LoginMethodsFragment_to_LoginActivity"
+            app:destination="@id/LoginActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/LoginActivity"
+        android:name="com.example.carshare.login.LoginActivity"
+        android:label="@string/login"
+        tools:layout="@layout/activity_login">
+    </fragment>
+
+</navigation>

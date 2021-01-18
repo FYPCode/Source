@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginmethods.LoginMethodsFragment">
+
+    <TextView
+        android:id="@+id/login_as"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="@string/login_as"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintBottom_toBottomOf="@id/login_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/login_user"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:text="@string/user"
+        android:backgroundTint="@android:color/holo_green_light"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/login_as" />
+
+    <Button
+        android:id="@+id/login_car_owner"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/car_owner"
+        android:backgroundTint="@android:color/holo_blue_light"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/login_user" />
+
+    <Button
+        android:id="@+id/login_administrator"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:text="@string/administrator"
+        android:backgroundTint="@android:color/holo_red_light"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/login_car_owner" />
+
+    <TextView
+        android:id="@+id/register_here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="@string/register_here"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_administrator" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:text="@string/register"
+        android:backgroundTint="@android:color/holo_purple"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/register_here" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
