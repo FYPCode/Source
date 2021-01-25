@@ -1,31 +1,38 @@
 <resources>
-    <string name="app_name">Car Share</string>
-    <!-- Strings used for fragments for navigation -->
-<!--    <string name="first_fragment_label">First Fragment</string>-->
-<!--    <string name="second_fragment_label">Second Fragment</string>-->
-<!--    <string name="previous">Previous</string>-->
-<!--    <string name="hello_first_fragment">Hello first fragment</string>-->
-<!--    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>-->
+    <string name="app_name">CarShare</string>
 
-    <string name="login_methods">Login Methods</string>
-    <string name="login">Login</string>
-    <string name="login_as">Login as</string>
-    <string name="user">User</string>
-    <string name="car_owner">Car Owner</string>
-    <string name="administrator">Administrator</string>
-    <string name="register_here">New user? Register here</string>
-    <string name="register">Register</string>
+    //activity_edit_user_profile
+    <string name="userProfile">User Profile</string>
+    <string name="saveProfileInfo">Save</string>
 
+    //activity_login_user
+    <string name="loginCarShare">Car Share</string>
+    <string name="loginAccount">Login Account</string>
+    <string name="loginAsUser">Login As User</string>
+    <string name="loginAsCarOwner">Login As Car Owner</string>
+    <string name="loginAsAdministrator">Login As Administrator</string>
+    <string name="newHere">New Here? Create An Account Here</string>
+    <string name="forgotPassword">Forgot Password? Tap Here</string>
+
+    //activity_main
+    <string name="emailNotVerified">Email Is Not Verified Yet!</string>
+    <string name="resendVerification">Resend Verification Email</string>
+    <string name="emailVerified">Tap Here To Login If You Have Verified Email</string>
+    <string name="accountType">User Type</string>
+    <string name="accountTypeField">User</string>
+    <string name="username">Username</string>
+    <string name="usernameField">Your Name</string>
     <string name="email">Email</string>
-    <string name="password">Password</string>
-    <string name="sign_in">Sign in</string>
-    <string name="welcome">"Welcome! "</string>
-    <string name="login_failed">"Login failed"</string>
-    <string name="invalid_username">Invalid Username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="emailField">Your Email Address</string>
+    <string name="phone">Phone</string>
+    <string name="phoneField">Your Phone Number</string>
+    <string name="editProfile">Edit Profile Info</string>
+    <string name="resetPassword">Reset Password</string>
+    <string name="logout">Logout</string>
 
-    <string name="bottom_navigation">Bottom Navigation</string>
-    <string name="home">Home</string>
-    <string name="dashboard">Dashboard</string>
-    <string name="notifications">Notifications</string>
+    //activity_register
+    <string name="registerCarShare">Car Share</string>
+    <string name="createNewAccount">Create New Account</string>
+    <string name="register">Register</string>
+    <string name="alreadyRegistered">Already Registered? Login Here</string>
 </resources>

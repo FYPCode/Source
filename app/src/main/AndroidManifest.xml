@@ -6,13 +6,11 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CarRental">
+        android:theme="@style/Theme.CarShare">
         <activity
-            android:name="com.example.carshare.loginmethods.LoginMethodsActivity"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.CarRental.NoActionBar">
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,15 +19,14 @@
         </activity>
 
         <activity
-            android:name="com.example.carshare.login.LoginActivity"
-            android:parentActivityName=".loginmethods.LoginMethodsActivity"
-            android:label="@string/login">
-        </activity>
-
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.carshare.bottomnavigation.BottomNavigationActivity"
-            android:label="@string/bottom_navigation">
-        </activity>
+            android:name=".LoginUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditUserProfileActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
