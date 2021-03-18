@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -26,6 +27,7 @@ import java.util.Map;
 
 public class EditUserProfileActivity extends AppCompatActivity {
 
+    Toolbar toolbar;
     EditText profileUsername, profileEmail, profilePhone;
     Button saveProfileInfo, backProfileInfo;
     FirebaseAuth auth;
@@ -38,6 +40,8 @@ public class EditUserProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_user_profile);
+
+        toolbar = findViewById(R.id.toolbar);
 
         profileUsername = findViewById(R.id.profileUsername);
         profileEmail = findViewById(R.id.profileEmail);
@@ -59,6 +63,12 @@ public class EditUserProfileActivity extends AppCompatActivity {
         profileUsername.setText(username);
         profileEmail.setText(email);
         profilePhone.setText(phone);
+
+        setSupportActionBar(toolbar);
+
+
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         saveProfileInfo.setOnClickListener(new View.OnClickListener() {
             @Override

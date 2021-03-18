@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -42,12 +43,14 @@ public class MainActivity extends AppCompatActivity {
     FirebaseUser user;
     String userId;
     DatabaseReference ref;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        toolbar = findViewById(R.id.toolbar);
         emailNotVerified = findViewById(R.id.emailNotVerified);
         resendVerification = findViewById(R.id.resendVerification);
         emailVerified = findViewById(R.id.emailVerified);
@@ -65,6 +68,10 @@ public class MainActivity extends AppCompatActivity {
         user = auth.getCurrentUser();
         userId = auth.getCurrentUser().getUid();
         ref = FirebaseDatabase.getInstance().getReference("User");
+
+        setSupportActionBar(toolbar);
+       // getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         if(!user.isEmailVerified()){
             emailNotVerified.setVisibility(View.VISIBLE);
@@ -152,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("email", emailField.getText().toString());
                 intent.putExtra("phone", phoneField.getText().toString());
                 startActivity(intent);
-                finish();
+                //finish();
             }
         });
 
@@ -193,6 +200,15 @@ public class MainActivity extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError databaseError) {
             }
         });
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId()==android.R.id.home) {
+            finish();
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
 }

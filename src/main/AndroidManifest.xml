@@ -2,9 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.carshare">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -17,14 +18,16 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
         <activity
             android:name=".MapActivity"
             android:screenOrientation="portrait">
-            <!--            <intent-filter>-->
-            <!--                <action android:name="android.intent.action.MAIN" />-->
-
-            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
-            <!--            </intent-filter>-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
 
         <activity
@@ -32,25 +35,31 @@
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+			android:parentActivityName=".MainPageActivity" />
         <activity
             android:name=".LoginUserActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".EditUserProfileActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+			android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainPageActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".UpgradeActivity"
             android:screenOrientation="portrait" />
+
+		<activity 
+			android:name=".ChatbotActivity" 
+			android:screenOrientation="portrait"
+			android:parentActivityName=".MainPageActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

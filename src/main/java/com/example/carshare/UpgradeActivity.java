@@ -50,7 +50,6 @@ public class UpgradeActivity extends AppCompatActivity {
     CarOwner co;
     Car c;
     ArrayList<Car> carList;
-
     final int SELECT_IMAGE_REQUEST = 100;
 
     @Override

@@ -1,5 +1,3 @@
-com/example/carshare/User.java
- com.example.carshare.User
 com/example/carshare/LoginUserActivity.java
  com.example.carshare.LoginUserActivity
  com.example.carshare.LoginUserActivity$1
@@ -12,25 +10,10 @@ com/example/carshare/LoginUserActivity.java
  com.example.carshare.LoginUserActivity$4$2
  com.example.carshare.LoginUserActivity$5
  com.example.carshare.LoginUserActivity$5$1
-com/example/carshare/MainActivity.java
- com.example.carshare.MainActivity
- com.example.carshare.MainActivity$1
- com.example.carshare.MainActivity$1$1
- com.example.carshare.MainActivity$1$2
- com.example.carshare.MainActivity$2
- com.example.carshare.MainActivity$3
- com.example.carshare.MainActivity$3$1
- com.example.carshare.MainActivity$3$1$1
- com.example.carshare.MainActivity$3$1$2
- com.example.carshare.MainActivity$3$2
- com.example.carshare.MainActivity$4
- com.example.carshare.MainActivity$5
- com.example.carshare.MainActivity$6
-com/example/carshare/MainPageActivity.java
- com.example.carshare.MainPageActivity
- com.example.carshare.MainPageActivity$1
- com.example.carshare.MainPageActivity$2
- com.example.carshare.MainPageActivity$3
+com/example/carshare/dialogflow/RequestJavaV2Task.java
+ com.example.carshare.dialogflow.RequestJavaV2Task
+com/example/carshare/dialogflow/BotReply.java
+ com.example.carshare.dialogflow.BotReply
 com/example/carshare/UpgradeActivity.java
  com.example.carshare.UpgradeActivity
  com.example.carshare.UpgradeActivity$1
@@ -52,12 +35,7 @@ com/example/carshare/MapActivity.java
  com.example.carshare.MapActivity
  com.example.carshare.MapActivity$1
  com.example.carshare.MapActivity$2
-com/example/carshare/Car.java
- com.example.carshare.Car
-com/example/carshare/BuildConfig.java
- com.example.carshare.BuildConfig
-com/example/carshare/CarOwner.java
- com.example.carshare.CarOwner
+ com.example.carshare.MapActivity$3
 com/example/carshare/EditUserProfileActivity.java
  com.example.carshare.EditUserProfileActivity
  com.example.carshare.EditUserProfileActivity$1
@@ -76,3 +54,43 @@ com/example/carshare/RegisterActivity.java
  com.example.carshare.RegisterActivity$3$2
  com.example.carshare.RegisterActivity$3$3
  com.example.carshare.RegisterActivity$3$4
+com/example/carshare/TestFragment.java
+ com.example.carshare.TestFragment
+com/example/carshare/User.java
+ com.example.carshare.User
+com/example/carshare/ChatbotActivity.java
+ com.example.carshare.ChatbotActivity
+ com.example.carshare.ChatbotActivity$1
+com/example/carshare/dialogflow/SendMessageInBg.java
+ com.example.carshare.dialogflow.SendMessageInBg
+com/example/carshare/dialogflow/ChatAdapter.java
+ com.example.carshare.dialogflow.ChatAdapter
+ com.example.carshare.dialogflow.ChatAdapter$MyViewHolder
+com/example/carshare/MainActivity.java
+ com.example.carshare.MainActivity
+ com.example.carshare.MainActivity$1
+ com.example.carshare.MainActivity$1$1
+ com.example.carshare.MainActivity$1$2
+ com.example.carshare.MainActivity$2
+ com.example.carshare.MainActivity$3
+ com.example.carshare.MainActivity$3$1
+ com.example.carshare.MainActivity$3$1$1
+ com.example.carshare.MainActivity$3$1$2
+ com.example.carshare.MainActivity$3$2
+ com.example.carshare.MainActivity$4
+ com.example.carshare.MainActivity$5
+ com.example.carshare.MainActivity$6
+com/example/carshare/dialogflow/Message.java
+ com.example.carshare.dialogflow.Message
+com/example/carshare/MainPageActivity.java
+ com.example.carshare.MainPageActivity
+ com.example.carshare.MainPageActivity$1
+ com.example.carshare.MainPageActivity$2
+ com.example.carshare.MainPageActivity$3
+ com.example.carshare.MainPageActivity$4
+com/example/carshare/Car.java
+ com.example.carshare.Car
+com/example/carshare/BuildConfig.java
+ com.example.carshare.BuildConfig
+com/example/carshare/CarOwner.java
+ com.example.carshare.CarOwner

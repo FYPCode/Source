@@ -38,6 +38,7 @@ public class MainPageActivity extends AppCompatActivity implements NavigationVie
     Toolbar toolbar;
     MenuItem nav_upgrade;
     CardView rentCar;
+    CardView chatbot;
     FirebaseAuth auth;
     FirebaseUser user;
     String userId;
@@ -52,6 +53,7 @@ public class MainPageActivity extends AppCompatActivity implements NavigationVie
         navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.toolbar);
         rentCar = findViewById(R.id.rentCar);
+        chatbot = findViewById(R.id.chatbot);
 
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
@@ -59,6 +61,9 @@ public class MainPageActivity extends AppCompatActivity implements NavigationVie
         ref = FirebaseDatabase.getInstance().getReference("User");
 
         setSupportActionBar(toolbar);
+
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         navigationView.bringToFront();
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
@@ -75,6 +80,16 @@ public class MainPageActivity extends AppCompatActivity implements NavigationVie
                 canRentOut();
             }
         });
+
+        chatbot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                startActivity(new Intent(getApplicationContext(), ChatbotActivity.class));
+            }
+        });
+
+
+
     }
 
     @Override
@@ -101,8 +116,9 @@ public class MainPageActivity extends AppCompatActivity implements NavigationVie
             case R.id.nav_home:
                 break;
             case R.id.nav_profile:
+                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new MainActivity()).commit
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                finish();
+                //finish();
                 break;
             case R.id.nav_upgrade:
                 startActivity(new Intent(getApplicationContext(), UpgradeActivity.class));
@@ -131,6 +147,9 @@ public class MainPageActivity extends AppCompatActivity implements NavigationVie
                         String isCarOwner = dataSnapshot.child(userId).child("isCarOwner").getValue(String.class);
                         if(isCarOwner.equals("Y")){
                             nav_upgrade.setVisible(false);
+                        }
+                        else{
+                            nav_upgrade.setVisible(true);
                         }
                     }
                 } else {
