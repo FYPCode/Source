@@ -10,6 +10,8 @@ com/example/carshare/LoginUserActivity.java
  com.example.carshare.LoginUserActivity$4$2
  com.example.carshare.LoginUserActivity$5
  com.example.carshare.LoginUserActivity$5$1
+com/example/carshare/Config.java
+ com.example.carshare.Config
 com/example/carshare/dialogflow/RequestJavaV2Task.java
  com.example.carshare.dialogflow.RequestJavaV2Task
 com/example/carshare/dialogflow/BotReply.java
@@ -58,6 +60,11 @@ com/example/carshare/TestFragment.java
  com.example.carshare.TestFragment
 com/example/carshare/User.java
  com.example.carshare.User
+com/example/carshare/PaymentDetails.java
+ com.example.carshare.PaymentDetails
+com/example/carshare/RentalPaymentActivity.java
+ com.example.carshare.RentalPaymentActivity
+ com.example.carshare.RentalPaymentActivity$1
 com/example/carshare/ChatbotActivity.java
  com.example.carshare.ChatbotActivity
  com.example.carshare.ChatbotActivity$1
