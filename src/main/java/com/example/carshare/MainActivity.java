@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,8 +38,9 @@ import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView accountTypeField, usernameField, emailField, phoneField, emailNotVerified, emailVerified;
-    Button resendVerification, editProfile, resetPassword, backToMain;
+    ImageView accountTypeImage, usernameImage, emailImage, phoneImage, drivingLicenseNoImage, expirationDateImage;
+    TextView profileInfo, accountType, accountTypeField, username, usernameField, email, emailField, phone, phoneField, drivingLicenseNo, drivingLicenseNoField, expirationDate, expirationDateField, emailNotVerified, emailVerified;
+    Button resendVerification, editProfile, resetPassword;
     FirebaseAuth auth;
     FirebaseUser user;
     String userId;
@@ -54,15 +56,29 @@ public class MainActivity extends AppCompatActivity {
         emailNotVerified = findViewById(R.id.emailNotVerified);
         resendVerification = findViewById(R.id.resendVerification);
         emailVerified = findViewById(R.id.emailVerified);
+        profileInfo = findViewById(R.id.profileInfo);
 
+        accountTypeImage = findViewById(R.id.accountTypeImage);
+        accountType = findViewById(R.id.accountType);
         accountTypeField = findViewById(R.id.accountTypeField);
+        usernameImage = findViewById(R.id.usernameImage);
+        username = findViewById(R.id.username);
         usernameField = findViewById(R.id.usernameField);
-        phoneField = findViewById(R.id.phoneField);
+        emailImage = findViewById(R.id.emailImage);
+        email = findViewById(R.id.email);
         emailField = findViewById(R.id.emailField);
+        phoneImage = findViewById(R.id.phoneImage);
+        phone = findViewById(R.id.phone);
+        phoneField = findViewById(R.id.phoneField);
+        drivingLicenseNoImage = findViewById(R.id.drivingLicenseNoImage);
+        drivingLicenseNo = findViewById(R.id.drivingLicenseNo);
+        drivingLicenseNoField = findViewById(R.id.drivingLicenseNoField);
+        expirationDateImage = findViewById(R.id.expirationDateImage);
+        expirationDate = findViewById(R.id.expirationDate);
+        expirationDateField = findViewById(R.id.expirationDateField);
 
         editProfile = findViewById(R.id.editProfile);
         resetPassword = findViewById(R.id.resetPassword);
-        backToMain = findViewById(R.id.backToMain);
 
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
@@ -74,13 +90,35 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         if(!user.isEmailVerified()){
+            String resendEmail = "Resend Verification Email To " + user.getEmail();
+            resendVerification.setText(resendEmail);
+
             emailNotVerified.setVisibility(View.VISIBLE);
             resendVerification.setVisibility(View.VISIBLE);
             emailVerified.setVisibility(View.VISIBLE);
 
+            profileInfo.setVisibility(View.GONE);
+            accountTypeImage.setVisibility(View.GONE);
+            accountType.setVisibility(View.GONE);
+            accountTypeField.setVisibility(View.GONE);
+            usernameImage.setVisibility(View.GONE);
+            username.setVisibility(View.GONE);
+            usernameField.setVisibility(View.GONE);
+            emailImage.setVisibility(View.GONE);
+            email.setVisibility(View.GONE);
+            emailField.setVisibility(View.GONE);
+            phoneImage.setVisibility(View.GONE);
+            phone.setVisibility(View.GONE);
+            phoneField.setVisibility(View.GONE);
+            drivingLicenseNoImage.setVisibility(View.GONE);
+            drivingLicenseNo.setVisibility(View.GONE);
+            drivingLicenseNoField.setVisibility(View.GONE);
+            expirationDateImage.setVisibility(View.GONE);
+            expirationDate.setVisibility(View.GONE);
+            expirationDateField.setVisibility(View.GONE);
+
             editProfile.setVisibility(View.GONE);
             resetPassword.setVisibility(View.GONE);
-            backToMain.setVisibility(View.GONE);
 
             resendVerification.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -158,16 +196,10 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("username", usernameField.getText().toString());
                 intent.putExtra("email", emailField.getText().toString());
                 intent.putExtra("phone", phoneField.getText().toString());
+                intent.putExtra("drivingLicenseNo", drivingLicenseNoField.getText().toString());
+                intent.putExtra("expirationDate", expirationDateField.getText().toString());
                 startActivity(intent);
                 //finish();
-            }
-        });
-
-        backToMain.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v){
-                startActivity(new Intent(getApplicationContext(), MainPageActivity.class));
-                finish();
             }
         });
     }
@@ -176,12 +208,15 @@ public class MainActivity extends AppCompatActivity {
         ref.orderByChild("email").equalTo(user.getEmail()).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if(dataSnapshot.exists()){
+                if(dataSnapshot.exists()) {
                     for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                         String accountTypeValue = dataSnapshot.child(userId).child("isCarOwner").getValue(String.class);
                         String usernameValue = dataSnapshot.child(userId).child("username").getValue(String.class);
                         String emailValue = dataSnapshot.child(userId).child("email").getValue(String.class);
                         String phoneValue = dataSnapshot.child(userId).child("phone").getValue(String.class);
+                        String drivingLicenseNoValue = dataSnapshot.child(userId).child("drivingLicenseNo").getValue(String.class);
+                        String expirationDateValue = dataSnapshot.child(userId).child("expirationDate").getValue(String.class);
+
                         if(accountTypeValue.equals("N")) {
                             accountTypeField.setText("User");
                         } else {
@@ -190,6 +225,8 @@ public class MainActivity extends AppCompatActivity {
                         usernameField.setText(usernameValue);
                         emailField.setText(emailValue);
                         phoneField.setText(phoneValue);
+                        drivingLicenseNoField.setText(drivingLicenseNoValue);
+                        expirationDateField.setText(expirationDateValue);
                     }
                 } else {
                     Toast.makeText(MainActivity.this, "Data Do Not Exist.", Toast.LENGTH_SHORT).show();
@@ -201,6 +238,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId()==android.R.id.home) {

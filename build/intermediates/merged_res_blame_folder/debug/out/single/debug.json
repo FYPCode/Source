@@ -4,10 +4,6 @@
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\border_outline.xml"
     },
     {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_ferrari.jpg.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_ferrari.jpg"
-    },
-    {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_back.xml.flat",
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\ic_back.xml"
     },
@@ -16,16 +12,20 @@
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\yellow_car.png"
     },
     {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rental_payment.xml.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\activity_rental_payment.xml"
-    },
-    {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_subaru.jpg.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_subaru.jpg"
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_bmw.png.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_bmw.png"
     },
     {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_map.xml.flat",
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\ic_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_history_receive.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\layout_history_receive.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_payment.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\activity_payment.xml"
     },
     {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_page.xml.flat",
@@ -40,20 +40,24 @@
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\ic_payment.xml"
     },
     {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_payment_details.xml.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\activity_payment_details.xml"
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_history_receive.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\activity_history_receive.xml"
     },
     {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_profile.png.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable-hdpi\\profile.png"
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_expiration_date.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\ic_expiration_date.xml"
     },
     {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_porsche.jpg.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_porsche.jpg"
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_car_model.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\layout_car_model.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_profile.png.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable-hdpi\\profile.png"
     },
     {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_car_list.png.flat",
@@ -62,10 +66,6 @@
     {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_header.xml.flat",
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\header.xml"
-    },
-    {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_bmw.jpg.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_bmw.jpg"
     },
     {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
@@ -84,6 +84,14 @@
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\ic_email.xml"
     },
     {
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_history_type.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\activity_history_type.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_history_payment.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\layout_history_payment.xml"
+    },
+    {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\font_aclonica.xml.flat",
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\font\\aclonica.xml"
     },
@@ -92,24 +100,48 @@
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable-hdpi\\ic_rent_car.png"
     },
     {
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rentable_car_details.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\activity_rentable_car_details.xml"
+    },
+    {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_geolocate.xml.flat",
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\ic_geolocate.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_driving_license_no.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\ic_driving_license_no.xml"
     },
     {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_jaguar.jpg.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_jaguar.jpg"
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_car_model.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\activity_car_model.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_history_payment.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\activity_history_payment.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_contact_us.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\activity_contact_us.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_account_type.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\ic_account_type.xml"
     },
     {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\font_baloo.xml.flat",
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\font\\baloo.xml"
     },
     {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_ford.jpg.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_ford.jpg"
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_map_user.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\activity_map_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_ford.png.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_ford.png"
     },
     {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_header_background.jpg.flat",
@@ -120,20 +152,28 @@
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable-hdpi\\ic_contact_us.png"
     },
     {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_landrover.jpg.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_landrover.jpg"
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rent_out.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\activity_rent_out.xml"
     },
     {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_volvo.jpg.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_volvo.jpg"
-    },
-    {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_hyundai.jpg.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_hyundai.jpg"
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_map_car_owner.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\activity_map_car_owner.xml"
     },
     {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_chatbot.png.flat",
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable-hdpi\\ic_chatbot.png"
+    },
+    {
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_jaguar.png.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_jaguar.png"
+    },
+    {
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_audi.png.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_audi.png"
+    },
+    {
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_bugatti.png.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_bugatti.png"
     },
     {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_profile.xml.flat",
@@ -156,12 +196,24 @@
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\ic_phone.xml"
     },
     {
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_rentable_car.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\layout_rentable_car.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_my_cars.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\activity_my_cars.xml"
+    },
+    {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_upgrade.xml.flat",
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\ic_upgrade.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_brand.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\layout_brand.xml"
     },
     {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
@@ -172,8 +224,8 @@
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\raw\\credential.json"
     },
     {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_marda.jpg.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_marda.jpg"
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_notification.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\activity_notification.xml"
     },
     {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
@@ -192,10 +244,6 @@
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_audi.jpg.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_audi.jpg"
-    },
-    {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\menu_main_menu.xml.flat",
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\menu\\main_menu.xml"
     },
@@ -208,24 +256,20 @@
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\activity_upgrade.xml"
     },
     {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_mercedes_benz.jpg.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_mercedes_benz.jpg"
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_rent_out.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\layout_rent_out.xml"
     },
     {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_nissan.jpg.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_nissan.jpg"
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_honda.png.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_honda.png"
     },
     {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_volkswagen.jpg.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_volkswagen.jpg"
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_brand.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\activity_brand.xml"
     },
     {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_user_type.xml.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\ic_user_type.xml"
-    },
-    {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_lamborghini.jpg.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_lamborghini.jpg"
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rent_out_details.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\activity_rent_out_details.xml"
     },
     {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_edit_user_profile.xml.flat",
@@ -240,10 +284,6 @@
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\bg_chat_send.xml"
     },
     {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_kia.jpg.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_kia.jpg"
-    },
-    {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_tran_history.png.flat",
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable-hdpi\\ic_tran_history.png"
     },
@@ -252,39 +292,35 @@
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable-hdpi\\mp_car.png"
     },
     {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_chatbot.xml.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\activity_chatbot.xml"
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rentable_car.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\activity_rentable_car.xml"
     },
     {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_suzuki.jpg.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_suzuki.jpg"
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_ferrari.png.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_ferrari.png"
     },
     {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_mini.jpg.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_mini.jpg"
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_lamborghini.png.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_lamborghini.png"
     },
     {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login_user.xml.flat",
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\activity_login_user.xml"
     },
     {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_toyota.jpg.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_toyota.jpg"
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rent_out_new_car.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\activity_rent_out_new_car.xml"
     },
     {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_map.xml.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\activity_map.xml"
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_my_cars_details.xml.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\activity_my_cars_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_mercedes_benz.png.flat",
+        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_mercedes_benz.png"
     },
     {
         "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
         "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\layout\\activity_register.xml"
-    },
-    {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_honda.jpg.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_honda.jpg"
-    },
-    {
-        "merged": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brand_mitsubishi.jpg.flat",
-        "source": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\src\\main\\res\\drawable\\brand_mitsubishi.jpg"
     }
 ]

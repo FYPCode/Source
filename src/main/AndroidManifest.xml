@@ -6,32 +6,55 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CarShare">
+        android:theme="@style/Theme.CarShare"
+        android:name=".FirebaseMobilePaymentsApp">
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <meta-data android:name="com.google.android.gms.version"
+        <meta-data
+            android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
+        <service
+            android:name=".FirebaseService"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
         <activity
-            android:name=".MapActivity"
+            android:name=".NotificationActivity"
             android:screenOrientation="portrait">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
         </activity>
 
         <activity
-            android:name=".RentalPaymentActivity"
+            android:name=".MapUserActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".MapCarOwnerActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".PaymentActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".RegisterActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,39 +63,111 @@
         </activity>
 
         <activity
-            android:name=".RegisterActivity"
-            android:screenOrientation="portrait">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-        </activity>
-        <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"
 			android:parentActivityName=".MainPageActivity" />
+
         <activity
             android:name=".LoginUserActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".EditUserProfileActivity"
             android:screenOrientation="portrait"
 			android:parentActivityName=".MainActivity" />
+
         <activity
             android:name=".MainPageActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".UpgradeActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainPageActivity" />
 
-		<activity 
-			android:name=".ChatbotActivity" 
-			android:screenOrientation="portrait"
-			android:parentActivityName=".MainPageActivity" />
+        <activity
+            android:name=".BrandActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainPageActivity">
+        </activity>
+
+        <activity
+            android:name=".CarModelActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".BrandActivity">
+        </activity>
+
+        <activity
+            android:name=".RentableCarActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".BrandActivity">
+        </activity>
+
+        <activity
+            android:name=".RentableCarDetailsActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".BrandActivity">
+        </activity>
+
+        <activity
+            android:name=".RentOutActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainPageActivity">
+        </activity>
+
+        <activity
+            android:name=".RentOutDetailsActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".RentOutActivity">
+        </activity>
+
+        <activity
+            android:name=".RentOutNewCarActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".RentOutActivity">
+        </activity>
+
+        <activity
+            android:name=".MyCarsActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainPageActivity">
+        </activity>
+
+        <activity
+            android:name=".MyCarsDetailsActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MyCarsActivity">
+        </activity>
+
+        <activity
+            android:name=".HistoryTypeActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainPageActivity">
+        </activity>
+
+        <activity
+            android:name=".HistoryPaymentActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".HistoryTypeActivity">
+        </activity>
+
+        <activity
+            android:name=".HistoryReceiveActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".HistoryTypeActivity">
+        </activity>
+
+        <activity
+            android:name=".ContactUsActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainPageActivity">
+        </activity>
+
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
     </application>
 
 </manifest>

@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\hp\\AndroidStudioProjects\\CarShare\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v26\\values-v26.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\f65e7d690d0436991c66205f0487ed30\\appcompat-1.2.0\\res\\values-v26\\values-v26.xml",
+                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\e6320afed07f4f08324f0265fba13e51\\appcompat-1.2.0\\res\\values-v26\\values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\8e2bd62067ff4a2fbb6e8b1c37196da5\\jetified-firebase-ui-auth-6.4.0\\res\\values-v26\\values-v26.xml",
+                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\467d2d1cc2baa046b746c57ad90223c4\\jetified-firebase-ui-auth-6.4.0\\res\\values-v26\\values-v26.xml",
                     "from": {
                         "startLines": "2,6,10,14",
                         "startColumns": "4,4,4,4",

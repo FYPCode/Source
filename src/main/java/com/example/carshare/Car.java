@@ -1,46 +1,93 @@
 package com.example.carshare;
 
-public class Car {
+public class Car extends CarModel {
 
-    private String carId;
     private String imageLink;
-    private String carModel;
-    private String vehicleRegistrationPlate;
+    private String pricePerDay;
+    private String ownedBy;
+    private String vehiclePlate;
+    private String color;
     private String description;
     private String isRentOut;
+    private String rentedBy;
 
-    public Car() {}
+    public Car() {
+        super();
+    }
 
-    public Car(String carId, String imageLink, String carModel, String vehicleRegistrationPlate, String description, String isRentOut) {
-        this.carId = carId;
+    public Car(String imageLink, String pricePerDay, String ownedBy, String vehiclePlate, String color, String description, String isRentOut) {
         this.imageLink = imageLink;
-        this.carModel = carModel;
-        this.vehicleRegistrationPlate = vehicleRegistrationPlate;
+        this.pricePerDay = pricePerDay;
+        this.ownedBy = ownedBy;
+        this.vehiclePlate = vehiclePlate;
+        this.color = color;
         this.description = description;
         this.isRentOut = isRentOut;
     }
 
-    public String getCarId() { return carId; }
+    @Override
+    public String getImageLink() {
+        return imageLink;
+    }
 
-    public void setCarId(String carId) { this.carId = carId; }
+    @Override
+    public void setImageLink(String imageLink) {
+        this.imageLink = imageLink;
+    }
 
-    public String getImageLink() { return imageLink; }
+    public String getPricePerDay() {
+        return pricePerDay;
+    }
 
-    public void setImageLink(String imageLink) { this.imageLink = imageLink; }
+    public void setPricePerDay(String pricePerDay) {
+        this.pricePerDay = pricePerDay;
+    }
 
-    public String getCarModel() { return carModel; }
+    public String getOwnedBy() {
+        return ownedBy;
+    }
 
-    public void setCarModel(String carModel) { this.carModel = carModel; }
+    public void setOwnedBy(String ownedBy) {
+        this.ownedBy = ownedBy;
+    }
 
-    public String getVehicleRegistrationPlate() { return vehicleRegistrationPlate; }
+    public String getVehiclePlate() {
+        return vehiclePlate;
+    }
 
-    public void setVehicleRegistrationPlate(String vehicleRegistrationPlate) { this.vehicleRegistrationPlate = vehicleRegistrationPlate; }
+    public void setVehiclePlate(String vehiclePlate) {
+        this.vehiclePlate = vehiclePlate;
+    }
 
-    public String getDescription() { return description; }
+    public String getColor() {
+        return color;
+    }
 
-    public void setDescription(String description) { this.description = description; }
+    public void setColor(String color) {
+        this.color = color;
+    }
 
-    public String getIsRentOut() { return isRentOut; }
+    public String getDescription() {
+        return description;
+    }
 
-    public void setIsRentOut(String isRentOut) { this.isRentOut = isRentOut; }
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getIsRentOut() {
+        return isRentOut;
+    }
+
+    public void setIsRentOut(String isRentOut) {
+        this.isRentOut = isRentOut;
+    }
+
+    public String getRentedBy() {
+        return rentedBy;
+    }
+
+    public void setRentedBy(String rentedBy) {
+        this.rentedBy = rentedBy;
+    }
 }

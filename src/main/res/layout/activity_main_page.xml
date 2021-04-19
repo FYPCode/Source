@@ -22,12 +22,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/fragment_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
@@ -91,6 +89,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageView">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/findACar"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
@@ -167,6 +166,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/myCars"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
@@ -198,6 +198,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/history"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
@@ -273,6 +274,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/contactUs"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"

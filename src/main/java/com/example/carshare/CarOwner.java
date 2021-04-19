@@ -4,36 +4,32 @@ import java.util.ArrayList;
 
 public class CarOwner extends User {
 
-    private String drivingLicenseNo;
-    private String expirationDate;
+    private String balance;
     private ArrayList<Car> carList;
 
-    public CarOwner(){
+    public CarOwner() {
         super();
     }
 
-    public CarOwner(String drivingLicenseNo, String expirationDate, ArrayList<Car> carList) {
-        this.drivingLicenseNo = drivingLicenseNo;
-        this.expirationDate = expirationDate;
+    public CarOwner(String balance, ArrayList<Car> carList) {
+        this.balance = balance;
         this.carList = carList;
     }
 
-    public String getDrivingLicenseNo() {
-        return drivingLicenseNo;
+    public String getBalance() {
+        return balance;
     }
 
-    public void setDrivingLicenseNo(String drivingLicenseNo) { this.drivingLicenseNo = drivingLicenseNo; }
-
-    public String getExpirationDate() {
-        return expirationDate;
+    public void setBalance(String balance) {
+        this.balance = balance;
     }
 
-    public void setExpirationDate(String expirationDate) {
-        this.expirationDate = expirationDate;
+    public ArrayList<Car> getCarList() {
+        return carList;
     }
 
-    public ArrayList<Car> getCarList() { return carList;}
-
-    public void setCarList(ArrayList<Car> carList) { this.carList = carList; }
+    public void setCarList(ArrayList<Car> carList) {
+        this.carList = carList;
+    }
 
 }
