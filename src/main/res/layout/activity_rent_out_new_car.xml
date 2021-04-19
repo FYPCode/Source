@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".RentOutNewCarActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="410dp"
+            android:layout_height="48dp"
+            android:background="@color/design_default_color_primary_dark"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/newCarInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Car Info"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.075" />
+
+        <ImageView
+            android:id="@+id/newCarImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/newCarInfo"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <Button
+            android:id="@+id/newCarSelectCarImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Select Car Image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/newCarImage"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <TextView
+            android:id="@+id/newCarSelectBrandAndCarModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please select a Brand and Car Model"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/newCarSelectCarImage"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <Spinner
+            android:id="@+id/newCarBrand"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/newCarSelectBrandAndCarModel"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <Spinner
+            android:id="@+id/newCarModel"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/newCarSelectBrandAndCarModel"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/newCarMaxHorsepower"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="number"
+            android:hint="Max Horsepower"
+            android:enabled="false"
+            app:layout_constraintStart_toStartOf="@+id/newCarBrand"
+            app:layout_constraintTop_toBottomOf="@+id/newCarBrand"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/newCarTransmission"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="text"
+            android:hint="Transmission"
+            android:enabled="false"
+            app:layout_constraintStart_toStartOf="@+id/newCarModel"
+            app:layout_constraintTop_toBottomOf="@+id/newCarModel"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/newCarCapacity"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="number"
+            android:hint="Capacity"
+            android:enabled="false"
+            app:layout_constraintStart_toStartOf="@+id/newCarMaxHorsepower"
+            app:layout_constraintTop_toBottomOf="@+id/newCarMaxHorsepower"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/newCarColor"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="text"
+            android:hint="Color"
+            app:layout_constraintStart_toStartOf="@+id/newCarTransmission"
+            app:layout_constraintTop_toBottomOf="@+id/newCarTransmission"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/newCarPricePerDay"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="number"
+            android:hint="Price per day"
+            app:layout_constraintStart_toStartOf="@+id/newCarCapacity"
+            app:layout_constraintTop_toBottomOf="@+id/newCarCapacity"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/newCarVehiclePlate"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="text"
+            android:hint="Vehicle Plate"
+            app:layout_constraintStart_toStartOf="@+id/newCarColor"
+            app:layout_constraintTop_toBottomOf="@+id/newCarColor"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/newCarDescription"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:lines="5"
+            android:maxLines="5"
+            android:inputType="textMultiLine"
+            android:hint="Description"
+            app:layout_constraintStart_toStartOf="@+id/newCarPricePerDay"
+            app:layout_constraintTop_toBottomOf="@+id/newCarPricePerDay"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <Button
+            android:id="@+id/saveNewCarInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/newCarDescription"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/saveNewCarInfo"
+            app:layout_constraintVertical_bias="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

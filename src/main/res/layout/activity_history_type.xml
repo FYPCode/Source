@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="410dp"
+        android:layout_height="48dp"
+        android:background="@color/design_default_color_primary_dark"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textColor="#056FF0"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:textStyle="bold|italic"
+        android:text="Please select a transaction type:"/>
+
+    <TextView
+        android:id="@+id/paymentsMade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textColor="#FF0000"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:textStyle="bold|italic"
+        android:text="Payments made"/>
+
+    <TextView
+        android:id="@+id/paymentsReceived"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textColor="#008000"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:textStyle="bold|italic"
+        android:text="Payments received"/>
+
+</LinearLayout>

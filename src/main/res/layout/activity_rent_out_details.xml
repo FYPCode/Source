@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".RentOutDetailsActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="410dp"
+            android:layout_height="48dp"
+            android:background="@color/design_default_color_primary_dark"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/rentOutCarInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Car Info"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.075" />
+
+        <ImageView
+            android:id="@+id/rentOutImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rentOutCarInfo"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <Button
+            android:id="@+id/rentOutSelectCarImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Select Car Image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rentOutImage"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <TextView
+            android:id="@+id/rentOutSelectBrandAndCarModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please select a Brand and Car Model"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rentOutSelectCarImage"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <Spinner
+            android:id="@+id/rentOutBrand"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rentOutSelectBrandAndCarModel"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <Spinner
+            android:id="@+id/rentOutCarModel"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rentOutSelectBrandAndCarModel"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/rentOutMaxHorsepower"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="number"
+            android:hint="Max Horsepower"
+            android:enabled="false"
+            app:layout_constraintStart_toStartOf="@+id/rentOutBrand"
+            app:layout_constraintTop_toBottomOf="@+id/rentOutBrand"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/rentOutTransmission"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="text"
+            android:hint="Transmission"
+            android:enabled="false"
+            app:layout_constraintStart_toStartOf="@+id/rentOutCarModel"
+            app:layout_constraintTop_toBottomOf="@+id/rentOutCarModel"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/rentOutCapacity"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="number"
+            android:hint="Capacity"
+            android:enabled="false"
+            app:layout_constraintStart_toStartOf="@+id/rentOutMaxHorsepower"
+            app:layout_constraintTop_toBottomOf="@+id/rentOutMaxHorsepower"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/rentOutColor"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="text"
+            android:hint="Color"
+            app:layout_constraintStart_toStartOf="@+id/rentOutTransmission"
+            app:layout_constraintTop_toBottomOf="@+id/rentOutTransmission"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/rentOutPricePerDay"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="number"
+            android:hint="Price per day"
+            app:layout_constraintStart_toStartOf="@+id/rentOutCapacity"
+            app:layout_constraintTop_toBottomOf="@+id/rentOutCapacity"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/rentOutVehiclePlate"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="text"
+            android:hint="Vehicle Plate"
+            app:layout_constraintStart_toStartOf="@+id/rentOutColor"
+            app:layout_constraintTop_toBottomOf="@+id/rentOutColor"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/rentOutDescription"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:lines="5"
+            android:maxLines="5"
+            android:inputType="textMultiLine"
+            android:hint="Description"
+            app:layout_constraintStart_toStartOf="@+id/rentOutPricePerDay"
+            app:layout_constraintTop_toBottomOf="@+id/rentOutPricePerDay"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <Button
+            android:id="@+id/saveCarInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rentOutDescription"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/saveCarInfo"
+            app:layout_constraintVertical_bias="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
