@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#E0D5D5"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/paymentCarImage"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/rentalTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#004DB4"
+                android:textSize="20sp"
+                android:textColor="#FFF"
+                android:gravity="center"
+                android:text="Rental Time" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#FFFF00" />
+
+            <TextView
+                android:id="@+id/totalPayment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#004DB4"
+                android:textSize="20sp"
+                android:textColor="#FFF"
+                android:gravity="center"
+                android:text="Total Payment" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#FFFF00" />
+
+            <TextView
+                android:id="@+id/numOfDays"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#004DB4"
+                android:textSize="20sp"
+                android:textColor="#FFF"
+                android:gravity="center"
+                android:text="Number of Days" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#FFFF00" />
+
+            <TextView
+                android:id="@+id/vehiclePlate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#004DB4"
+                android:textSize="20sp"
+                android:textColor="#FFF"
+                android:gravity="center"
+                android:text="Vehicle Plate" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#FFFF00" />
+
+            <TextView
+                android:id="@+id/carOwnerName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#004DB4"
+                android:textSize="20sp"
+                android:textColor="#FFF"
+                android:gravity="center"
+                android:text="Car Owner Name" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

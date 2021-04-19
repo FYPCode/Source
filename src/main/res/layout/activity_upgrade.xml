@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".UpgradeActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="410dp"
+            android:layout_height="48dp"
+            android:background="@color/design_default_color_primary_dark"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/upgradeToCarOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upgrade To Car Owner"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.075" />
+
+        <TextView
+            android:id="@+id/upgradeFirstCarInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Car Info"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/upgradeToCarOwner"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintVertical_bias="0.025" />
+
+        <ImageView
+            android:id="@+id/upgradeImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/upgradeFirstCarInfo"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <Button
+            android:id="@+id/upgradeSelectCarImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Select Car Image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/upgradeImage"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <TextView
+            android:id="@+id/upgradeSelectBrandAndCarModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please select a Brand and Car Model"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/upgradeFirstCarInfo"
+            app:layout_constraintTop_toBottomOf="@+id/upgradeSelectCarImage"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <Spinner
+            android:id="@+id/upgradeBrand"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/upgradeSelectBrandAndCarModel"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <Spinner
+            android:id="@+id/upgradeCarModel"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/upgradeSelectBrandAndCarModel"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/upgradeMaxHorsepower"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="number"
+            android:hint="Max Horsepower"
+            android:enabled="false"
+            app:layout_constraintStart_toStartOf="@+id/upgradeBrand"
+            app:layout_constraintTop_toBottomOf="@+id/upgradeBrand"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/upgradeTransmission"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="text"
+            android:hint="Transmission"
+            android:enabled="false"
+            app:layout_constraintStart_toStartOf="@+id/upgradeCarModel"
+            app:layout_constraintTop_toBottomOf="@+id/upgradeCarModel"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/upgradeCapacity"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="number"
+            android:hint="Capacity"
+            android:enabled="false"
+            app:layout_constraintStart_toStartOf="@+id/upgradeMaxHorsepower"
+            app:layout_constraintTop_toBottomOf="@+id/upgradeMaxHorsepower"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/upgradeColor"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="text"
+            android:hint="Color"
+            app:layout_constraintStart_toStartOf="@+id/upgradeTransmission"
+            app:layout_constraintTop_toBottomOf="@+id/upgradeTransmission"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/upgradePricePerDay"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="number"
+            android:hint="Price per day"
+            app:layout_constraintStart_toStartOf="@+id/upgradeCapacity"
+            app:layout_constraintTop_toBottomOf="@+id/upgradeCapacity"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/upgradeVehiclePlate"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="text"
+            android:hint="Vehicle Plate"
+            app:layout_constraintStart_toStartOf="@+id/upgradeColor"
+            app:layout_constraintTop_toBottomOf="@+id/upgradeColor"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/upgradeDescription"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:lines="5"
+            android:maxLines="5"
+            android:inputType="textMultiLine"
+            android:hint="Description"
+            app:layout_constraintStart_toStartOf="@+id/upgradePricePerDay"
+            app:layout_constraintTop_toBottomOf="@+id/upgradePricePerDay"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <Button
+            android:id="@+id/upgrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Upgrade"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/upgradeDescription"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/upgrade"
+            app:layout_constraintVertical_bias="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

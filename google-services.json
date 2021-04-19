@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "890352363224",
+    "firebase_url": "https://carshare-d538d-default-rtdb.firebaseio.com",
+    "project_id": "carshare-d538d",
+    "storage_bucket": "carshare-d538d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890352363224:android:ce0498b1dc8190d58899ad",
+        "android_client_info": {
+          "package_name": "com.example.carshare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "890352363224-e9d278r7dkj5ld1mo4g17fmjv02m8t8u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoGyA2AbJ9tG-unw1MbUwRjqdK9zlBMSg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "890352363224-e9d278r7dkj5ld1mo4g17fmjv02m8t8u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
